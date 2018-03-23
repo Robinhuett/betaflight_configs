@@ -1,0 +1,77 @@
+# Betaflight / IRCFUSIONF3 3.1.7 Apr  3 2017 / 22:04:52 (e1c4b5c)
+resource PPM 1 NONE
+resource PWM 1 NONE
+resource SERIAL_TX 11 A00
+
+feature -VBAT
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature SOFTSERIAL
+feature TELEMETRY
+feature BLACKBOX
+map TAER1234
+serial 1 8192 115200 57600 0 115200
+serial 2 64 115200 57600 0 115200
+serial 30 32 115200 57600 0 115200
+aux 0 0 1 900 1700
+aux 1 28 1 900 1300
+aux 2 4 0 1700 2100
+aux 3 28 0 900 900
+rxrange 2 1001 2003
+set min_throttle = 1100
+set max_throttle = 1900
+set min_command = 1015
+set digital_idle_percent =  0.000
+set motor_pwm_rate = 0
+set small_angle = 180
+set serialrx_provider = SBUS
+set bat_capacity = 1550
+set vbat_max_cell_voltage = 40
+set vbat_min_cell_voltage = 30
+set vbat_warning_cell_voltage = 30
+set battery_meter_type = NONE
+set align_board_yaw = 90
+set gyro_sync_denom = 8
+set failsafe_off_delay = 0
+set failsafe_throttle = 1100
+set baro_hardware = AUTO
+set pid_process_denom = 1
+set blackbox_rate_denom = 2
+set blackbox_device = SPIFLASH
+profile 0
+
+set gps_pos_p = 0
+set gps_posr_p = 0
+set gps_posr_i = 0
+set gps_posr_d = 0
+set gps_nav_p = 0
+set gps_nav_i = 0
+set gps_nav_d = 0
+set setpoint_relax_ratio = 0
+set d_setpoint_weight = 0
+set yaw_accel_limit =  0.000
+set p_pitch = 69
+set i_pitch = 77
+set d_pitch = 55
+set p_roll = 58
+set i_roll = 67
+set d_roll = 44
+set p_yaw = 91
+set d_yaw = 15
+set p_alt = 55
+set i_alt = 55
+set p_level = 46
+set d_level = 75
+set p_vel = 120
+set i_vel = 45
+set d_vel = 1
+rateprofile 0
+rateprofile 0
+
+set rc_rate = 125
+set rc_rate_yaw = 110
+set thr_mid = 0
+set roll_srate = 78
+set pitch_srate = 78
+set yaw_srate = 75
+set tpa_rate = 15
