@@ -3,15 +3,6 @@
 # name
 name RBNFPV
 
-# resources
-
-# mixer
-
-# servo
-
-# servo mix
-
-
 # feature
 feature TELEMETRY
 feature AIRMODE
@@ -23,8 +14,6 @@ feature DYNAMIC_FILTER
 # map
 map TAER1234
 
-# serial
-
 # led
 
 # color
@@ -35,20 +24,14 @@ map TAER1234
 
 # adjrange
 
-# rxrange
-
-# vtx
-
 # rxfail
 rxfail 8 s 1500
 
 # master
-set gyro_notch1_hz = 0
-set gyro_notch2_hz = 0
+set min_check = 1020
 set rssi_channel = 9
 set serialrx_provider = SBUS
 set small_angle = 180
-set pid_process_denom = 1
 
 # osd
 
@@ -91,13 +74,19 @@ set osd_nvario_pos = 279
 set osd_esc_tmp_pos = 82
 set osd_esc_rpm_pos = 83
 set osd_stat_max_spd = OFF
-set vcd_video_system = 2
 
 # profile
 profile 0
 
 set dterm_lowpass_type = PT1
 set anti_gravity_gain = 4000
+set gyro_notch1_hz = 0
+set gyro_notch2_hz = 0
 
 # rateprofile
 rateprofile 0
+
+set roll_rc_rate = 105
+set pitch_rc_rate = 105
+set roll_srate = 80
+set pitch_srate = 80
