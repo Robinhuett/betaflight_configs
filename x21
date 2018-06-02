@@ -114,6 +114,8 @@ profile 0
 
 set dterm_lowpass_type = PT1
 set anti_gravity_gain = 4000
+set setpoint_relax_ratio = 1
+set dterm_setpoint_weight = 100
 set p_pitch = 63
 set p_yaw = 90
 set i_pitch = 53
