@@ -80,6 +80,8 @@ profile 0
 
 set dterm_lowpass_type = PT1
 set anti_gravity_gain = 4000
+set setpoint_relax_ratio = 1
+set dterm_setpoint_weight = 100
 set gyro_notch1_hz = 0
 set gyro_notch2_hz = 0
 
