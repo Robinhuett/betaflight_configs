@@ -28,6 +28,7 @@ set min_check = 1020
 set rssi_channel = 8
 set motor_pwm_protocol = MULTISHOT
 set small_angle = 180
+set yaw_motor_reversed = on
 
 # profile
 profile 0
