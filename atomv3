@@ -1,10 +1,6 @@
 # Betaflight / COLIBRI_RACE (CLBR) 3.3.3 May 31 2018 / 12:58:08 (3565182d3) MSP API: 1.38
 # name
-name RBNFPV
-
-# feature
-feature ANTI_GRAVITY
-feature DYNAMIC_FILTER
+name RBN
 
 # map
 map TAER1234
@@ -13,30 +9,22 @@ map TAER1234
 color 6 15,0,192
 
 # aux
-aux 0 0 1 900 1700 0
-
-# rxfail
-rxfail 8 s 1500
+aux 0 0 0 1300 2100 0 0
+aux 1 35 1 900 1300 0 0
 
 # master
-set gyro_notch1_hz = 0
-set gyro_notch2_hz = 0
 set acc_hardware = NONE
 set mag_hardware = NONE
 set baro_hardware = NONE
 set min_check = 1020
 set rssi_channel = 8
-set motor_pwm_protocol = MULTISHOT
+set dshot_idle_value = 300
+set motor_pwm_protocol = DSHOT600
 set small_angle = 180
 set yaw_motor_reversed = on
 
 # profile
 profile 0
-
-set dterm_lowpass_type = PT1
-set anti_gravity_gain = 4000
-set setpoint_relax_ratio = 1
-set dterm_setpoint_weight = 100
 
 # rateprofile
 rateprofile 0
